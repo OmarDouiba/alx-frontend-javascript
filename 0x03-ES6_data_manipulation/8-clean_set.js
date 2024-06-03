@@ -4,7 +4,7 @@ export default function cleanSet(set, startString) {
     return '';
   }
   for (const name of set) {
-    if (name.startsWith(startString)) {
+    if (name && name.startsWith(startString)) {
       str.push(name.slice(startString.length));
     }
   }
